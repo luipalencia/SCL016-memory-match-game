@@ -1,2 +1,4 @@
 import pokemon from '../data/pokemon/pokemon.js';
-console.log(pokemon);
+import { gamePageEasy } from './App.js';
+
+

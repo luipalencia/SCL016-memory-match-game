@@ -1,10 +1,4 @@
-//
-// Para incluir los diferentes sets de cartas podemos _importar_ el archivo
-// JavasSript que contenga el `export` correspondiente...
-//
-import pokemon from '../data/pokemon/pokemon.js';
-console.log(Object.values(pokemon));
-// //
+
 // O alternativamente podríamos cargar el JSON de forma asíncrona usando
 // `fetch` en el momento que consideremos necesario.
 //
@@ -26,7 +20,7 @@ const gamePageEasy = () => {
   const el = document.createElement('div');
 
   el.className = 'gamePageEasy';
-  el.innerHTML =  '<img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon">';
+  el.innerHTML =  '';
 
   return el;
 };
@@ -35,7 +29,7 @@ const gamePageMedium = () => {
   const el = document.createElement('div');
 
   el.className = 'gamePageMedium';
-  el.innerHTML =  '<img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"><img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon">';
+  el.innerHTML =  '';
 
   return el;
 };
@@ -44,7 +38,7 @@ const gamePageHard = () => {
   const el = document.createElement('div');
 
   el.className = 'gamePageHard';
-  el.innerHTML =  '<img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"><img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"><img src="./resources/carta.png" alt="Carta pokemon"></img> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon"> <img src="./resources/carta.png" alt="Carta pokemon">';
+  el.innerHTML =  '';
 
   return el;
 };
