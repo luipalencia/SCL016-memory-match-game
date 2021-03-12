@@ -3,7 +3,6 @@ import pokemon from '../data/pokemon/pokemon.js';
 
 
 document.getElementById('root').appendChild(App());
-document.querySelector('#reset').style.display = "none";
 
 let buttonToEasy = document.querySelector('#easy');
 buttonToEasy.addEventListener("click", function () {
@@ -45,16 +44,5 @@ let buttonToHard = document.querySelector('#hard');
 buttonToHard.addEventListener("click", function () {
 
     document.querySelector('#root').style.display = "none";
-    document.querySelector('#reset').style.display = "block";
-
-});
-
-let buttonToInit = document.querySelector('#reset');
-buttonToInit.addEventListener("click", function () {
-
-    document.querySelector('#gamePageEasy').style.display = "none";
-    document.querySelector('#gamePageMedium').style.display = "none";
-    document.querySelector('#gamePageHard').style.display = "none";
-    document.querySelector('#root').style.display = "block";
 
 });
