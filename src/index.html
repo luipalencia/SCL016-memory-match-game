@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memory Match</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,12 +12,29 @@
 
 <body>
 
-  <audio src="./resources/musica.mp3" controls ></audio>
-  <div id="root"></div>
-  <div id="gamePageEasy"></div>
-  <div id="gamePageMedium"></div>
-  <div id="gamePageHard"></div>
-  <div id="congratsPage"></div>
+  <audio src="./resources/musica.mp3" controls></audio>
+  <section id="root">
+    <img src="./resources/pokemon.png" alt="Logo Pokemon" id="logo">
+    <h1>Memorice</h1>
+    <h2>¿Estás listo para ser un entrenador Pokemón?</h2>
+    <h3>Selecciona con cuántos pares quieres jugar</h3>
+    <div class="difficulty">
+      <img src="./resources/pokeball.png" alt="Tres pares de cartas" class="dificultad" id="easy">
+      <img src="./resources/superball.png" alt="Seis pares de cartas" class="dificultad" id="medium">
+      <img src="./resources/ultraball.png" alt="Nueve pares de cartas" class="dificultad" id="hard">
+    </div>
+    <div>
+      <img src="./resources/ash.gif" alt="" id="img-footer">
+    </div>
+  </section>
+  <section id="gamePage" style="display: none;">
+    <div class="pokemonCards" id="pokemonCards"></div>
+  </section>
+  <section id="congratsPage" style="display: none;">
+    <!-- <h4>Felicitaciones</h4>
+    <img src="./resources/celebrate.gif" alt="Pokemones celebrando victoria" id="celebrate1">
+    <img src="./resources/confetti.gif" alt="Confetti" id="celebrate2"> -->
+  </section>
 
   <script src="main.js" type="module"></script>
 </body>
