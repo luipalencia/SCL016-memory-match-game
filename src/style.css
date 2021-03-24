@@ -3,40 +3,102 @@ body {
     background-image: url(./resources/background.png);
     background-position: center;
     background-repeat: no-repeat;
-    height: 108rem;
+}
+audio {
+    width: 30%;
+    opacity: 0.7;
+    filter: drop-shadow(2px 4px 6px darkblue);
 }
 #logo {
     display: block;
     margin: auto;
+    width: 75%;
 }
-h1 {
+h1, 
+h2, 
+h3 {
     font-family: VT323;
-    font-size: 5rem;
+    font-size: 2rem;
     color: darkblue;
     text-shadow: 3px 3px lightcyan;
     text-align: center;
 }
-h2, h3 {
-    font-family: VT323;
-    font-size: 5rem;
-    color: darkblue;
-    text-shadow: 3px 3px lightcyan;
-    text-align: center;
-}
-#difficulty {
+.difficulty {
     justify-content: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-#easy, #medium, #hard {
-    width: 16%;
-
+.buttonLevels { 
+    width: 10%;
+}
+#easy,
+#medium,
+#hard {
+    width: 13%;
 }
 #congrats-page {
     display: none;
 }
-#footer {
-    display: none;
+#img-footer {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: 19%;
+}
+#botonInicio{
+    font-family: VT323;
+    background: yellow;
+    width: 12%;
+    opacity: 0.9;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+}
+#toInit {
+    background-color: #f1f135;
+    width: 25%;
+    font-family: 'VT323';
+    font-size: larger;
+    filter: drop-shadow(2px 2px 3px black);
+    margin: auto;
+    display: block;
+}
+.gamePage {
+    display: flex;
+}
+.pokemonCards {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+   }
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    position: relative;
+    margin: 7px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+   }
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .2;
+    }
+.memory-card.flip {
+    transform: rotateY(180deg);
+    }
+.card-upside,
+.card-backside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #1c7ccc;
+    backface-visibility: hidden;
+   }
+.card-backside {
+    transform: rotateY(180deg);
 }
