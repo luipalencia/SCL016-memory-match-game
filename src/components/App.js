@@ -11,15 +11,15 @@ import pokemon from '../data/pokemon/pokemon.js';
 
 const gamePage = () => {
 
-/*   let node1 = document.querySelector('#pokemonCards');
+   /* let node1 = document.querySelector('#pokemonCards');
   let text = document.createElement("h1");
   text.textContent = "¡Voltea las cartas para encontrar pares de tus Pokemones favoritos!";
-  node1.appendChild(text);
- */
-/*   let playAgain = document.getElementById ('toInit')
+  node1.appendChild(text); */
+ 
+  /* let playAgain = document.getElementById ('toInit')
   playAgain.addEventListener('click', () =>{
     location.reload();
-  }); */
+  });  */
  
 
   function shuffleArray(array) {
