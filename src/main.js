@@ -1,7 +1,6 @@
 import { gamePage, congratsPage } from './components/App.js';
 
 
-
  let dificultades = document.getElementsByClassName('dificultad');
 for (let i = 0; i < dificultades.length; i++) {
   dificultades[i].addEventListener('click', (event) => {
@@ -19,7 +18,7 @@ for (let i = 0; i < dificultades.length; i++) {
       case "hard":
       default:
         document.querySelector('#root').style.display = "none";
-        document.querySelector('#congratsPage').style.display = "block";
+        document.querySelector('#gamePage').style.display = "block";
         gamePage();
         break;
     }

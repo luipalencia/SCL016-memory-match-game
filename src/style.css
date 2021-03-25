@@ -3,6 +3,7 @@ body {
     background-image: url(./resources/background.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 audio {
     width: 30%;
@@ -29,30 +30,15 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.buttonLevels { 
-    width: 10%;
-}
 #easy,
 #medium,
 #hard {
-    width: 13%;
-}
-#congrats-page {
-    display: none;
+    width: 17%;
 }
 #img-footer {
     width: 40%;
     margin-left: 50%;
     margin-top: 19%;
-}
-#botonInicio{
-    font-family: VT323;
-    background: yellow;
-    width: 12%;
-    opacity: 0.9;
-    display: block;
-    margin: auto;
-    font-size: 1rem;
 }
 #toInit {
     background-color: #f1f135;
@@ -62,9 +48,7 @@ h3 {
     filter: drop-shadow(2px 2px 3px black);
     margin: auto;
     display: block;
-}
-.gamePage {
-    display: flex;
+    margin-top: 10%;
 }
 .pokemonCards {
     width: 640px;
@@ -73,6 +57,7 @@ h3 {
     flex-wrap: wrap;
     margin: auto;
     perspective: 1000px;
+    justify-content: center;
    }
 .memory-card {
     width: calc(25% - 10px);
@@ -101,4 +86,15 @@ h3 {
    }
 .card-backside {
     transform: rotateY(180deg);
+}
+#celebrate3 {
+    width: 75%;
+    display: block;
+    margin: auto;
+    padding: 15%;
+}
+#celebrate1 {
+    display: block;
+    margin: auto;
+    width: 100%;
 }
