@@ -1,8 +1,10 @@
-import { gamePage, congratsPage } from './components/App.js';
+import { App, gamePage } from './components/App.js';
 
+let variable = App();
+let varia1 = document.querySelector('#root');
+varia1.appendChild(variable);
 
-
- let dificultades = document.getElementsByClassName('dificultad');
+let dificultades = document.getElementsByClassName('dificultad');
 for (let i = 0; i < dificultades.length; i++) {
   dificultades[i].addEventListener('click', (event) => {
     switch (event.target.id) {
@@ -19,9 +21,9 @@ for (let i = 0; i < dificultades.length; i++) {
       case "hard":
       default:
         document.querySelector('#root').style.display = "none";
-        document.querySelector('#congratsPage').style.display = "block";
+        document.querySelector('#gamePage').style.display = "block";
         gamePage();
         break;
     }
   })
-} 
+}
