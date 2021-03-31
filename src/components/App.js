@@ -39,8 +39,7 @@ const gamePage = () => {
     pokemons.map(function (element) {
       let node = document.querySelector('.pokemonCards');
       let card = document.createElement("div");
-      card.classList.add("memory-card");
-      card.classList.add(element.id);
+      card.classList.add("memory-card", element.id);
       node.appendChild(card);
       let backside = document.createElement("img");
       backside.className = "card-backside";
