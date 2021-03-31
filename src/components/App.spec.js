@@ -3,8 +3,8 @@ import {App , gamePage } from './App.js';
 
 describe('App', () => {
   it('should render without crashing', () => {
-    const el = App();
-    expect(el instanceof HTMLElement).toBe(true);
+    const initContent = App();
+    expect(initContent instanceof HTMLElement).toBe(true);
   });
 });
 

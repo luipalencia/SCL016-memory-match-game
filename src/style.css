@@ -15,42 +15,32 @@ audio {
     margin: auto;
     width: 75%;
 }
-#memorice {
+#memorice-img {
     display: block;
     margin: auto;
     width: 35%;
     margin-bottom: 15%;
 }
-#entrenador {
+#trainer-img {
     display: block;
     margin: auto;
     width: 90%;
     margin-top: 8%;
 }
-#select {
+#select-img {
     display: block;
     margin: auto;
     width: 80%;
     margin-top: 10%;
     margin-bottom: 8%;
 }
-.titulo {
+.instructions {
     display: block;
     margin: auto;
     width: 80%;
     margin-top: 4%;
 }
-h1, 
-h2, 
-h3 {
-    font-family: VT323;
-    font-size: 2rem;
-    color: darkblue;
-    text-shadow: 3px 3px lightcyan;
-    text-align: center;
-}
-.difficulty {
-    justify-content: center;
+.difficultities {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -60,13 +50,13 @@ h3 {
 #hard {
     width: 17%;
 }
-#img-footer {
+#footer-img {
     width: 40%;
     margin-left: 50%;
     margin-top: 19%;
 }
 /* botones de inicio */
-#toInit {
+#startOver {
     background-color: #f1f135;
     width: 25%;
     font-family: 'VT323';
@@ -79,7 +69,7 @@ h3 {
     z-index: 4;
     margin-left: 38%;
 }
-#toInit1 {
+#startOverOne {
     background-color: #f1f135;
     width: 25%;
     font-family: 'VT323';
@@ -97,7 +87,7 @@ h3 {
     flex-wrap: wrap;
     margin: auto;
     perspective: 1000px;
-   }
+}
 .memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -106,14 +96,14 @@ h3 {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-   }
+}
 .memory-card:active {
     transform: scale(.97);
     transition: transform .2;
-    }
+}
 .memory-card.flip {
     transform: rotateY(180deg);
-    }
+}
 .card-upside,
 .card-backside {
     position: absolute;
@@ -122,19 +112,11 @@ h3 {
     border-radius: 10px;
     background: #1c7ccc;
     backface-visibility: hidden;
-   }
+}
 .card-backside {
     transform: rotateY(180deg);
 }
 /* estilo de imagenes de congratsPage */
-#celebrate3 {
-    width: 75%;
-    display: block;
-    margin: auto;
-    padding: 15%;
-    position: absolute;
-    z-index: 2;
-}
 #celebrate1 {
     display: block;
     margin: auto;
@@ -148,4 +130,12 @@ h3 {
     z-index: 3;
     width: 100%;
     height: 100%;
+}
+#celebrate3 {
+    width: 75%;
+    display: block;
+    margin: auto;
+    padding: 15%;
+    position: absolute;
+    z-index: 2;
 }
