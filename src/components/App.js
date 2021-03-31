@@ -133,6 +133,7 @@ const gamePage = () => {
   }
   
   /* Hace reset del tablero cada vez que hay disable o unflip */
+
   function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
