@@ -4,7 +4,9 @@ const App = () => {
   const el = document.createElement('div');
 
   el.className = 'initPage';
+
   el.innerHTML = '<img src="./resources/pokemon.png" alt="Logo Pokemon" class="logo"><img src="./resources/Memorice.png" alt="Logo Pokemon" id="memorice"><img src="./resources/trainer.png" alt="Logo Pokemon" id="entrenador"><img src="./resources/select.png" alt="Logo Pokemon" id="select"><div class="difficulty"><img src="./resources/pokeball.png" alt="Tres pares de cartas" class="dificultad" id="easy"><img src="./resources/superball.png" alt="Seis pares de cartas" class="dificultad" id="medium"><img src="./resources/ultraball.png" alt="Nueve pares de cartas" class="dificultad" id="hard"></div><div><img src="./resources/ash.gif" alt="" id="img-footer"></div>';
+
 
   return el;
 }
@@ -92,7 +94,7 @@ const gamePage = () => {
     if (isMatch === true) {
       correct += 1;
     }
-    if (correct === 2) {
+    if (correct === 9) {
       document.querySelector('#gamePage').style.display = "none";
       document.querySelector('#congratsPage').style.display = "block";
       var el = document.querySelector('#congratsPage');
@@ -127,6 +129,7 @@ const gamePage = () => {
   }
 
   /* Hace reset del tablero cada vez que hay disable o unflip */
+
   function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
